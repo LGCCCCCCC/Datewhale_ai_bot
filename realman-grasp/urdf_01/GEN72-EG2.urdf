@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="GEN72">
+  <material name="aluminum">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+  <material name="robot_gray">
+    <color rgba="0.6 0.6 0.6 1"/>
+  </material>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.000608631599856789 0.000101410841223995 0.0500536423028974"
+        rpy="0 0 0" />
+      <mass
+        value="0.725732279372378" />
+      <inertia
+        ixx="0.00116526259312761"
+        ixy="3.86984764047093E-06"
+        ixz="3.61598634195121E-05"
+        iyy="0.00114387939249178"
+        iyz="-1.69159565748085E-06"
+        izz="0.000799620765266388" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="3.54241616240111E-07 -6.0407327765511E-05 -0.0474562076947793"
+        rpy="0 0 0" />
+      <mass
+        value="0.511231576042974" />
+      <inertia
+        ixx="0.000959440501675413"
+        ixy="-1.90967914521862E-09"
+        ixz="-7.95751539476377E-09"
+        iyy="0.00102039305288465"
+        iyz="1.46570590325122E-06"
+        izz="0.000388714616194907" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link1.STL" />
+      </geometry>
+      <material name="robot_gray"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.218"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.0014"
+      upper="3.0014"
+      effort="25"
+      velocity="3.141" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="-7.09647952406739E-07 -0.0576246216953338 -3.88440270542586E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.551907023014854" />
+      <inertia
+        ixx="0.00142140348660833"
+        ixy="-1.11203318362369E-08"
+        ixz="1.36371990293752E-08"
+        iyy="0.00052571427239726"
+        iyz="1.30499471891358E-06"
+        izz="0.00127234961251408" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link2.STL" />
+      </geometry>
+      <material name="robot_gray"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.8323"
+      upper="1.8323"
+      effort="25"
+      velocity="3.141" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="0.00897441376214204 2.62633968732461E-05 -0.07382847021305"
+        rpy="0 0 0" />
+      <mass
+        value="0.774130450031718" />
+      <inertia
+        ixx="0.00242102073961794"
+        ixy="-6.22596416744426E-07"
+        ixz="-0.000489521447339786"
+        iyy="0.00248694314969312"
+        iyz="-1.48542895560703E-06"
+        izz="0.000900997189719803" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link3.STL" />
+      </geometry>
+      <material name="robot_gray"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 -0.28 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.0014"
+      upper="3.0014"
+      effort="25"
+      velocity="3.141" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="-0.00962438865086499 0.0352034287339324 0.000174576348464699"
+        rpy="0 0 0" />
+      <mass
+        value="0.437130215853825" />
+      <inertia
+        ixx="0.000866914153248162"
+        ixy="0.000148761646913658"
+        ixz="-7.42553547352418E-07"
+        iyy="0.000267753002587659"
+        iyz="2.68058265485487E-06"
+        izz="0.000952324298928136" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link4.STL" />
+      </geometry>
+      <material name="robot_gray"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0.04 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.8792"
+      upper="0.9597"
+      effort="25"
+      velocity="3.141" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="-4.77956518807332E-07 -3.84737693792594E-05 -0.066955487820054"
+        rpy="0 0 0" />
+      <mass
+        value="0.424276753764529" />
+      <inertia
+        ixx="0.0011244489011316"
+        ixy="7.5662322019411E-09"
+        ixz="-1.71276249932628E-08"
+        iyy="0.00103382374928123"
+        iyz="8.24694417478756E-07"
+        izz="0.000274640088277484" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link5.STL" />
+      </geometry>
+      <material name="robot_gray"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="-0.019 0.2525 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.0014"
+      upper="3.0014"
+      effort="5"
+      velocity="3.926" />
+  </joint>
+  <link
+    name="Link6">
+    <inertial>
+      <origin
+        xyz="0.00184221861298974 0.0379763265035087 -9.21090904324278E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.302793039332829" />
+      <inertia
+        ixx="0.00014011480503376"
+        ixy="-3.00204828273403E-06"
+        ixz="-4.58155498966787E-10"
+        iyy="0.000132631402640971"
+        iyz="7.01344540253995E-10"
+        izz="0.000155721320872423" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link6.STL" />
+      </geometry>
+      <material name="robot_gray"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link5" />
+    <child
+      link="Link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.707"
+      upper="1.783"
+      effort="5"
+      velocity="3.926" />
+  </joint>
+  <link
+    name="Link7">
+    <inertial>
+      <origin
+        xyz="0.000199884675729955 -4.25081843764018E-08 -0.0292498694019246"
+        rpy="0 0 0" />
+      <mass
+        value="0.176612671882913" />
+      <inertia
+        ixx="6.24281233883421E-05"
+        ixy="2.55814128580721E-10"
+        ixz="-3.1014379202721E-12"
+        iyy="6.24291486534025E-05"
+        iyz="1.37181281239386E-11"
+        izz="8.48642555354654E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link7.STL" />
+      </geometry>
+      <material name="robot_gray"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/GEN72/urdf/gen_72_b_description/meshes/Link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint7"
+    type="revolute">
+    <origin
+      xyz="0.0905 0.067 0"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="Link6" />
+    <child
+      link="Link7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.0014"
+      upper="3.0014"
+      effort="5"
+      velocity="3.926" />
+  </joint>
+  <!-- <include filename="/home/kewei/17robo/ManiSkill/urdf_01/EG2-4C2.urdf"/> -->
+  <link
+    name="4C2_baselink">
+    <inertial>
+      <origin
+        xyz="1.5645E-05 -4.1838E-06 0.038"
+        rpy="0 0 0" />
+      <mass
+        value="0.072633" />
+      <inertia
+        ixx="5.095E-05"
+        ixy="-7.3167E-13"
+        ixz="2.0229E-08"
+        iyy="6.0883E-05"
+        iyz="-4.5583E-09"
+        izz="1.933E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_baselink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_baselink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="4C2_Link1">
+    <inertial>
+      <origin
+        xyz="0.0087669 0.009 0.013992"
+        rpy="0 0 0" />
+      <mass
+        value="0.0024292" />
+      <inertia
+        ixx="5.1061E-07"
+        ixy="-8.6739E-19"
+        ixz="-2.508E-07"
+        iyy="5.7398E-07"
+        iyz="-1.3667E-18"
+        izz="2.6747E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4C2_Joint1"
+    type="revolute">
+    <origin
+      xyz="-0.04 -0.009 0.079"
+      rpy="0 0 0" />
+    <parent
+      link="4C2_baselink" />
+    <child
+      link="4C2_Link1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0.82"
+      effort="1"
+      velocity="1" />
+    
+  </joint>
+  <link
+    name="4C2_Link5">
+    <inertial>
+      <origin
+        xyz="0.011864 0.006 0.011367"
+        rpy="0 0 0" />
+      <mass
+        value="0.0045068" />
+      <inertia
+        ixx="5.1288E-07"
+        ixy="-9.8137E-14"
+        ixz="-9.4703E-08"
+        iyy="5.3203E-07"
+        iyz="-6.212E-14"
+        izz="2.009E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4C2_Joint5"
+    type="revolute">
+    <origin
+      xyz="0.0223 0.003 0.035591"
+      rpy="0 0 0" />
+    <parent
+      link="4C2_Link1" />
+    <child
+      link="4C2_Link5" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0.82"
+      effort="1"
+      velocity="1" />
+    <mimic joint="4C2_Joint1" multiplier="1" offset="0"/>
+  </joint>
+  <link
+    name="4C2_Link2">
+    <inertial>
+      <origin
+        xyz="0.0087435 0.009 0.013955"
+        rpy="0 0 0" />
+      <mass
+        value="0.0038971" />
+      <inertia
+        ixx="5.6941E-07"
+        ixy="-1.0711E-18"
+        ixz="-2.6891E-07"
+        iyy="6.2305E-07"
+        iyz="-1.6845E-18"
+        izz="3.0871E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4C2_Joint2"
+    type="revolute">
+    <origin
+      xyz="-0.03 -0.009 0.081"
+      rpy="0 0 0" />
+    <parent
+      link="4C2_baselink" />
+    <child
+      link="4C2_Link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0.82"
+      effort="1"
+      velocity="1" />
+    <mimic joint="4C2_Joint1" multiplier="1" offset="0"/>
+  </joint>
+  <link
+    name="4C2_Link3">
+    <inertial>
+      <origin
+        xyz="-0.0087435 0.009 0.013955"
+        rpy="0 0 0" />
+      <mass
+        value="0.0038971" />
+      <inertia
+        ixx="5.6941E-07"
+        ixy="1.0666E-18"
+        ixz="2.6891E-07"
+        iyy="6.2305E-07"
+        iyz="-1.8084E-18"
+        izz="3.0871E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4C2_Joint3"
+    type="revolute">
+    <origin
+      xyz="0.03 -0.009 0.081"
+      rpy="0 0 0" />
+    <parent
+      link="4C2_baselink" />
+    <child
+      link="4C2_Link3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-0.82"
+      upper="0"
+      effort="1"
+      velocity="1" />
+    <mimic joint="4C2_Joint1" multiplier="-1" offset="0"/>
+  </joint>
+  <link
+    name="4C2_Link4">
+    <inertial>
+      <origin
+        xyz="-0.0087669 0.009 0.013992"
+        rpy="0 0 0" />
+      <mass
+        value="0.0024292" />
+      <inertia
+        ixx="5.1061E-07"
+        ixy="-9.5279E-19"
+        ixz="2.508E-07"
+        iyy="5.7398E-07"
+        iyz="7.6863E-19"
+        izz="2.6747E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4C2_Joint4"
+    type="revolute">
+    <origin
+      xyz="0.04 -0.009 0.079"
+      rpy="0 0 0" />
+    <parent
+      link="4C2_baselink" />
+    <child
+      link="4C2_Link4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-0.82"
+      upper="0"
+      effort="1"
+      velocity="1" />
+    <mimic joint="4C2_Joint1" multiplier="-1" offset="0"/>
+  </joint>
+  <link
+    name="4C2_Link6">
+    <inertial>
+      <origin
+        xyz="-0.011864 0.006 0.011367"
+        rpy="0 0 0" />
+      <mass
+        value="0.0045068" />
+      <inertia
+        ixx="5.1288E-07"
+        ixy="-9.8137E-14"
+        ixz="9.4703E-08"
+        iyy="5.3203E-07"
+        iyz="6.2119E-14"
+        izz="2.009E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../my_urdf/rm_models/thirdparty/Two-finger Electric Gripper.urdf/meshes/4C2_Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4C2_Joint6"
+    type="revolute">
+    <origin
+      xyz="-0.0223 0.003 0.035591"
+      rpy="0 0 0" />
+    <parent
+      link="4C2_Link4" />
+    <child
+      link="4C2_Link6" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0.82"
+      effort="1"
+      velocity="1" />
+    <mimic joint="4C2_Joint1" multiplier="1" offset="0"/>
+  </joint>
+  <transmission name="gripper_finger1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="4C2_Joint1">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="gripper_finger1_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <joint name="gripper_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="Link7"/> <!-- Replace Link7 with actual end effector link -->
+    <child link="4C2_baselink"/> <!-- This refers to the base link of the EG2-4C2 Gripper -->
+  </joint>
+
+  <!-- Inserted RealSense Camera Definition -->
+  <joint name="realsense_joint" type="fixed">
+    <origin rpy="0 -1.5707 3.1415" xyz="0.035 0 0.036"/>
+    <parent link="Link7"/> <!-- Modified parent link -->
+    <child link="camera_base_link"/>
+  </joint>
+  <link name="camera_base_link"/>
+  <joint name="camera_link_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.02 0.0115"/>
+    <parent link="camera_base_link"/>
+    <child link="camera_link"/>
+  </joint>
+  <link name="camera_link">
+    <visual>
+      <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0 -0.02 0"/>
+      <geometry>
+        <!-- Modified mesh path -->
+        <mesh filename="package://mani_skill/assets/robots/panda/realsense2_description/meshes/d415.stl"/>
+      </geometry>
+      <material name="aluminum"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0125 -0.02 0"/>
+      <geometry>
+        <box size="0.02005 0.099 0.023"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.564"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.003881243" ixy="0.0" ixz="0.0" iyy="0.000498940" iyz="0.0" izz="0.003879257"/>
+    </inertial>
+  </link>
+  <!-- End of Inserted RealSense Camera Definition -->
+
+</robot>

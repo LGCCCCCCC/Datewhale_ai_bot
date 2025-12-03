@@ -1,0 +1,26 @@
+name: realman-grasp
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - cudatoolkit=11.8
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip
+  - pip:
+    - mani_skill
+    - sapien
+    - gymnasium
+    - pybullet
+    - ikpy
+    - transforms3d
+    - transformers
+    - pillow
+    - matplotlib
+    - opencv-python
+    - open3d
+    - "git+https://github.com/facebookresearch/segment-anything.git"
